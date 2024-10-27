@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Mahal Restaurant</title>
+    <link rel="stylesheet" a href="tajmahal.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+</head>
+
+<body>
+    <div class="maincontainer">
+
+        <div class="bg img">
+        </div>
+        <div class="black ">
+        </div>
+
+        <div class="logo center">
+            <p class="logo">logo</p>
+        </div>
+
+        <div class="menuandlogo lefttop lt ">
+            <button class="btn" onclick="openForm()">menu</button><br>
+            <button class="btn" onclick="open_Form()">contact</button>
+        </div>
+
+
+        <div class="extrainfo leftbottom lb">
+            <p style="font-size:24px;">monday - friday 10-23 | saturday 14-02</p>
+            <p style="font-size:20px;">42 village St, New York</p>
+            <p style="font-size:16px;"> powered by w3.css</p>
+        </div>
+
+
+
+        <div class="menu" id="menu">
+
+            <div class="text mainmenu">
+
+                <div class="headeronly">
+                    <div class="heading lists"> Starters</div>
+
+                    <div class="crossbutton btncancel" id="cancel" onclick="closeForm()">
+                        <button> x </button>
+                    </div>
+
+                </div>
+                
+                <div class="starters list">
+                    <p class="lists">
+                        Tomato Soup $2.50<br>
+                        Chicken Salad $3.50 <br>
+                        Bread and Butter $1.00
+                    </p>
+                </div>
+
+                <div class="heading lists"> Main Courses</div>
+                <div class="maincourses list">
+                    <p class="lists">
+                        Grilled Fish and Potatoes <b>$8.5 </b> <br>
+                        Italian Pizza <b> $5.5 </b><br>
+                        Veggie Pasta <b> $4.00</b> <br>
+                        Chicken and Potatoes <b> $6.50 </b><br>
+                        Deluxe Burger <b> $5.00</b>
+                    </p>
+                </div>
+
+                <div class="heading lists"> Desserts</div>
+                <div class="desserts list">
+                    <p class="lists">
+                        Fruit Salad $2.50<br>
+                        Ice cream $2.00 <br>
+                        Chocolate Cake $4.00 <br>
+                        Cheese $5.50
+                    </p>
+                </div>
+
+
+                <!-- <p>
+                Tomato Soup $2.50<br>
+                Chicken Salad $3.50 <br>
+                Bread and Butter $1.00
+                </p>
+
+                <p>
+                Grilled Fish and Potatoes $8.5
+                Italian Pizza $5.5
+                Veggie Pasta $4.00
+                Chicken and Potatoes $6.50
+                Deluxe Burger $5.00
+                </p>
+
+                <p>
+                Fruit Salad $2.50
+                Ice cream $2.00
+                Chocolate Cake $4.00
+                Cheese $5.50
+                </p> -->
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+<div class="contactform pop-up container" id="contact">
+    <div class="formcontainer">
+
+        <div class="top section container">
+            <div class="contactheading"> </div>
+            <div class="cross_button btn_cancel" id="cancel2" onclick="close_Form()">
+                <button> x </button>
+            </div>
+        </div>
+
+        <div>
+            <p></p>
+            <form>
+                <input type="text" placeholder="Name" id="name">
+                <input type="number" placeholder="How many people" id="Number">
+                <input type="datetime-local" placeholder="Date and time" value="2001-11-20T11:00">
+                <input type="text" placeholder="Message/ Special Requirements" id="special Message">
+                <button type="submit"> SEND MESSAGE </button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+<script>
+    function openForm() {
+        document.getElementById("menu").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("menu").style.display = "none";
+    }
+
+    function open_Form() {
+        document.getElementById("contact").style.display = "block";
+    }
+
+    function close_Form() {
+        document.getElementById("contact").style.display = "none";
+    }
+
+
+    
+</script>
+
+</html>
